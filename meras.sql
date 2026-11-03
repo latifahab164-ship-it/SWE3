@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: 03 نوفمبر 2026 الساعة 17:06
+-- Generation Time: 03 نوفمبر 2026 الساعة 18:47
 -- إصدار الخادم: 5.7.24
 -- PHP Version: 8.3.1
 
@@ -82,28 +82,29 @@ CREATE TABLE `club` (
   `category` varchar(75) NOT NULL,
   `logo` varchar(255) NOT NULL,
   `is_active` tinyint(1) NOT NULL DEFAULT '1',
-  `leaders_structure` text
+  `leaders_structure` text,
+  `objectives` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- إرجاع أو استيراد بيانات الجدول `club`
 --
 
-INSERT INTO `club` (`club_id`, `club_name`, `description`, `category`, `logo`, `is_active`, `leaders_structure`) VALUES
-(2, 'نادي قوقل للمطورين', 'نادي يهتم بتطوير البرمجيات والتقنيات الحديثة.', 'تقني', 'gdg.png', 1, NULL),
-(3, 'نادي الصيدلة', 'نادي يهتم بالمجالات الصيدلانية والتوعية الصحية.', 'صحي', 'pharmacy.png', 1, NULL),
-(4, 'نادي رؤية 2030', 'نادي يهتم بمبادرات رؤية المملكة 2030.', 'ثقافي', 'vision2030.png', 1, NULL),
-(5, 'نادي الابتكار وريادة الأعمال', 'نادي يهتم بالابتكار والمشاريع الريادية.', 'ريادي', 'innovation.png', 1, NULL),
-(6, 'نادي الرياضات الإلكترونية', 'نادي يهتم بالرياضات الإلكترونية وأنشطتها.', 'تقني', 'esports.png', 1, NULL),
-(7, 'نادي الدرونز والروبوت', 'نادي يهتم بالطائرات دون طيار والروبوتات.', 'تقني', 'robotics.png', 1, NULL),
-(8, 'نادي المحاسبة', 'نادي يهتم بالمحاسبة وتطوير المهارات المهنية.', 'مهني', 'accounting.png', 1, NULL),
-(9, 'نادي التسويق', 'نادي يهتم بالتسويق ومهاراته وتطبيقاته.', 'مهني', 'marketing.png', 1, NULL),
-(10, 'نادي الطباعة ثلاثية الأبعاد', 'نادي يهتم بتقنيات الطباعة ثلاثية الأبعاد.', 'تقني', 'printing3d.png', 1, NULL),
-(11, 'نادي طويق', 'نادي يهتم بتنمية المهارات التقنية.', 'تقني', 'tuwaiq.png', 1, NULL),
-(12, 'نادي الهندسة الصناعية', 'نادي يهتم بالهندسة الصناعية وتطبيقاتها.', 'هندسي', 'industrial.png', 1, NULL),
-(13, 'نادي تقنية المستقبل', 'نادي يهتم بالتقنيات المستقبلية والابتكار.', 'تقني', 'futuretech.png', 1, NULL),
-(14, 'نادي ضياء', 'نادي يهتم بالأنشطة والمبادرات الطلابية.', 'طلابي', 'diyaa.png', 1, NULL),
-(15, 'نادي الشراكة الطلابية', 'نادي طلابي يهتم بتعزيز الشراكات والتعاون.', 'طلابي', 'partnership.png', 1, NULL);
+INSERT INTO `club` (`club_id`, `club_name`, `description`, `category`, `logo`, `is_active`, `leaders_structure`, `objectives`) VALUES
+(2, 'نادي قوقل للمطورين', 'نادي يهتم بتطوير البرمجيات والتقنيات الحديثة.', 'تقني', 'gdg.png', 1, NULL, NULL),
+(3, 'نادي الصيدلة', 'نادي يهتم بالمجالات الصيدلانية والتوعية الصحية.', 'صحي', 'pharmacy.png', 1, NULL, NULL),
+(4, 'نادي رؤية 2030', 'نادي يهتم بمبادرات رؤية المملكة 2030.', 'ثقافي', 'vision2030.png', 1, NULL, NULL),
+(5, 'نادي الابتكار وريادة الأعمال', 'نادي يهتم بالابتكار والمشاريع الريادية.', 'ريادي', 'innovation.png', 1, NULL, NULL),
+(6, 'نادي الرياضات الإلكترونية', 'نادي يهتم بالرياضات الإلكترونية وأنشطتها.', 'تقني', 'esports.png', 1, NULL, NULL),
+(7, 'نادي الدرونز والروبوت', 'نادي يهتم بالطائرات دون طيار والروبوتات.', 'تقني', 'robotics.png', 1, NULL, NULL),
+(8, 'نادي المحاسبة', 'نادي يهتم بالمحاسبة وتطوير المهارات المهنية.', 'مهني', 'accounting.png', 1, NULL, NULL),
+(9, 'نادي التسويق', 'نادي يهتم بالتسويق ومهاراته وتطبيقاته.', 'مهني', 'marketing.png', 1, NULL, NULL),
+(10, 'نادي الطباعة ثلاثية الأبعاد', 'نادي يهتم بتقنيات الطباعة ثلاثية الأبعاد.', 'تقني', 'printing3d.png', 1, NULL, NULL),
+(11, 'نادي طويق', 'نادي يهتم بتنمية المهارات التقنية.', 'تقني', 'tuwaiq.png', 1, NULL, NULL),
+(12, 'نادي الهندسة الصناعية', 'نادي يهتم بالهندسة الصناعية وتطبيقاتها.', 'هندسي', 'industrial.png', 1, NULL, NULL),
+(13, 'نادي تقنية المستقبل', 'نادي يهتم بالتقنيات المستقبلية والابتكار.', 'تقني', 'futuretech.png', 1, NULL, NULL),
+(14, 'نادي ضياء', 'نادي يهتم بالأنشطة والمبادرات الطلابية.', 'طلابي', 'diyaa.png', 1, NULL, NULL),
+(15, 'نادي الشراكة الطلابية', 'نادي طلابي يهتم بتعزيز الشراكات والتعاون.', 'طلابي', 'partnership.png', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -322,19 +323,19 @@ ALTER TABLE `student`
 -- AUTO_INCREMENT for table `achievement`
 --
 ALTER TABLE `achievement`
-  MODIFY `achievement_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `achievement_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `application`
 --
 ALTER TABLE `application`
-  MODIFY `application_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `application_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `application_tracking`
 --
 ALTER TABLE `application_tracking`
-  MODIFY `tracking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `tracking_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `club`
@@ -352,25 +353,25 @@ ALTER TABLE `club_account`
 -- AUTO_INCREMENT for table `membership`
 --
 ALTER TABLE `membership`
-  MODIFY `membership_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `membership_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `opportunity`
 --
 ALTER TABLE `opportunity`
-  MODIFY `opportunity_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `opportunity_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `requirement`
 --
 ALTER TABLE `requirement`
-  MODIFY `requirement_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `requirement_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- قيود الجداول المحفوظة
