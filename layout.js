@@ -89,7 +89,7 @@
 
       /* الشعار */
       '<a href="' + homeHref + '" class="logo">' +
-        '<img src="logoMeras.png" alt="شعار مِراس">' +
+        '<img src="image/logoMeras.png" alt="شعار مِراس">' +
       '</a>' +
 
       /* زر القائمة للجوال */
@@ -154,7 +154,7 @@
           '<div class="footer-title">' +
 
             '<img ' +
-              'src="sunMeras.png" ' +
+              'src="image/sunMeras.png"  ' +
               'alt="شمس مِراس" ' +
               'class="footer-sun">' +
 
