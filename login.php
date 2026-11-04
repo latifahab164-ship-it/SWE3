@@ -565,7 +565,7 @@
   <!-- Logo -->
 
   <img
-    src="logoMeras.png"
+   src="image/logoMeras.png"
     alt="شعار مِراس"
     class="auth-logo"
   >
